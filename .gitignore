@@ -1,0 +1,4 @@
+.direnv
+.vscode
+elm-stuff
+node_modules

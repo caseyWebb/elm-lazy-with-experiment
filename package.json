@@ -1,0 +1,15 @@
+{
+  "name": "elm-lazy-with",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server",
+    "build": "elm make src/Main.elm --output=public/app.js && ./postprocess.sh public/app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
