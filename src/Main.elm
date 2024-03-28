@@ -64,7 +64,7 @@ viewLazyWith =
 
 
 lazyWith : (a -> a -> Bool) -> (a -> Html msg) -> a -> Html msg
-lazyWith compare view_ a =
+lazyWith _ _ _ =
     placeholder
 
 
@@ -73,10 +73,10 @@ placeholder =
     text "Missing lazyWith post-processing"
 
 
-log =
-    Debug.log
+
+-- log =
+--     Debug.log
 
 
-
--- log _ =
---     identity
+log _ =
+    identity

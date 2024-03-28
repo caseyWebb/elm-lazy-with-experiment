@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "http-server",
-    "build": "elm make src/Main.elm --output=public/app.js && ./postprocess.sh public/app.js"
+    "build": "elm make src/Main.elm --output=public/app.js && ./postprocess.sh public/app.js",
+    "build:optimized": "elm make src/Main.elm --optimize --output=public/app.js && ./postprocess.sh public/app.js"
   },
   "author": "",
   "license": "ISC",
